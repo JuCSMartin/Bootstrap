@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atypical - Realização</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 
     <main>
       <div class="container pt-5 mt-5">
-        <h1 class="mb-5">Realização</h1>
+        <h1 class="mb-4">Realização</h1>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Criadora: <a href="https://www.imdb.com/name/nm1968720/?ref_=tt_ov_wr" target="_blank">Robia Rashid</a></li>
           <li class="list-group-item">Data de lançamento: 11 de agosto de 2017</li>
@@ -43,8 +44,44 @@
           <li class="list-group-item">Produtoras: Exhibit ASony Pictures Television</li>
         </ul>
       </div>
+      <hr>
+      <div class="container">
+          <h1 class="mt-5 mb-3">Quer receber mais informações técnicas sobre a série?</h1>
+          <p>Insira as informações abaixo e enviaremos o conteúdo assim que possível.</p>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" onkeyup='validaNome()'>
+              <div id="txtNome"></div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" onkeyup='validaEmail()'>
+              <div id="txtEmail"></div>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <input type="text" class="form-control" id="mensagem" onkeyup='validaMensagem()'>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" onclick='enviar()'>Enviar</button>
+          </form>
+      </div>
     </main>
 
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com/" target="_blank"> <img class="tm-social p-20" src="assets/img/facebook.png" alt="Logo do Facebook"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank"> <img class="tm-social p-20" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
+        </div>
+       
+        <div class="center">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/juliana-martinez-3b9170114/" target="_blank">Juliana Martinez &copy;</a></p>
+        </div>
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
